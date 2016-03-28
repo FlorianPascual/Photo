@@ -1,0 +1,43 @@
+{
+  "name": "classicodr/rave-app",
+  "description": "App skeleton of the RaveFramework",
+  "license": "GNU GPLv3",
+  "authors": [
+    {
+      "name": "KaiserCoder"
+    },
+    {
+      "name": "Stardisblue"
+    }
+  ],
+  "require": {
+    "classicodr/rave-core": "*@alpha",
+    "classicodr/rave-lib": "*",
+    "erusev/parsedown": "^1.6",
+    "intervention/image": "^2.3"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:Classicodr/rave-core.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Classicodr/rave-lib.git"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "app\\tests\\": "tests/app",
+      "rave\\tests\\": "vendor/classicodr/rave-core/tests"
+    }
+  }
+}
